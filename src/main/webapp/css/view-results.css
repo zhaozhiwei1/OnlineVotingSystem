@@ -1,0 +1,18 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.back-link {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.chart-container {
+    width: 80%;
+    margin: 0 auto;
+}

@@ -1,0 +1,114 @@
+body {
+    background-color: rgba(58, 136, 107, 0.3); /* 使用rgba设置背景颜色和透明度 */
+}
+.container {
+    width: 80%;
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: rgb(58, 136, 107);
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 24px;
+}
+.back-link {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: #007BFF;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 8px 12px;
+    border: 1px solid #007BFF;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.back-link:hover {
+    background-color: #007BFF;
+    color: white;
+}
+
+form label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+form input, form textarea {
+    width: calc(100% - 20px);
+    margin-top: 5px;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.vote-option {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.vote-option input {
+    flex: 1;
+}
+
+.vote-option .delete-option {
+    margin-left: 10px;
+    background-color: #ff4d4f;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.vote-option .delete-option:hover {
+    background-color: #ff0000;
+}
+
+.add-option-btn {
+    margin-top: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-option-btn:hover {
+    background-color: #45a049;
+}
+
+button[type="submit"] {
+    margin-top: 20px;
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    background-color: rgba(230, 249, 242, 0.0); /* 半透明背景 */
+    color: rgb(16, 16, 16);
+    text-align: center;
+    padding: 10px;
+    margin-top: 100px;
+    margin-left: -8px;
+}

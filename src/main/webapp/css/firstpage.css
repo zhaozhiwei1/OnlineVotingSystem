@@ -1,0 +1,218 @@
+/* 网站整体背景颜色 */
+body {
+    background-color: rgba(58, 136, 107, 0.3); /* 使用rgba设置背景颜色和透明度 */
+}
+/* 导航栏样式 */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(230, 249, 242, 0.5); /* 半透明背景 */
+    color: rgb(16, 16, 16);
+    padding: 20px 40px; /* 修改间距 */
+    margin-top: -7px;
+    margin-left: -8px;
+    width: 96%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* 添加阴影 */
+}
+
+/* 导航链接样式 */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 40px; /* 修改间距 */
+    margin-right: 120px;
+}
+
+.nav-links a {
+    text-decoration: none; /* 去掉下划线 */
+    color: rgb(16, 16, 16); /* 设置链接颜色 */
+}
+.nav-links a:hover {
+    color: #8ac3a0;
+}
+
+/* 下拉菜单样式 */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #e6f9f2;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* 下拉菜单链接样式 */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none; /* 去掉下划线 */
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #e6f9f2;
+}
+
+
+/* 登录注册按钮样式 */
+.login-register {
+    display: flex;
+    gap: 20px; /* 修改间距 */
+    margin-right: 20px;
+}
+.login-register a {
+    text-decoration: none; /* 去掉下划线 */
+    color: rgb(16, 16, 16); /* 设置链接颜色 */
+}
+.login-register a:hover {
+    color: #8ac3a0;
+}
+/* logo样式 */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+/* 第二部分样式 */
+.second-part{
+    display: flex; /* 使用flexbox布局 */
+    margin-top: 180px;
+    justify-content: space-between; /* 让子元素平均分配空间 */
+}
+/* 毛玻璃框样式 */
+.blur-box {
+    background-color: rgba(255, 255, 255, 0.5); /* 半透明背景 */
+    backdrop-filter: blur(10px); /* 模糊效果 */
+    border-radius: 10px; /* 圆角 */
+    padding: 20px;
+    margin: 50px;
+    margin-top: 70px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* 阴影效果 */
+    flex: 1; /* 让毛玻璃框平均分配空间 */
+    position: relative; /* 相对定位 */
+}
+
+/* 毛玻璃框标题样式 */
+.blur-box h2 {
+    color: #3a886b; /* 标题颜色 */
+}
+
+/* 毛玻璃框内容样式 */
+.blur-box p {
+    color: #333; /* 内容颜色 */
+}
+
+/* 主题样式 */
+.theme {
+    text-align: center; /* 文字居中 */
+    font-size: 36px; /* 字体大小 */
+    font-weight: bold; /* 字体加粗 */
+    margin-bottom: 20px; /* 底部间距 */
+    position: absolute; /* 绝对定位 */
+    left: 50%; /* 水平居中 */
+    transform: translateX(-50%); /* 水平居中 */
+    width: 100%; /* 宽度占满父容器 */
+}
+/* 第三部分样式 */
+.third-part {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+/* 透明阴影框样式 */
+.transparent-box {
+    background-color: rgba(255, 255, 255, 0.1); /* 半透明背景 */
+    backdrop-filter: blur(10px); /* 模糊效果 */
+    border-radius: 10px; /* 圆角 */
+    padding: 20px;
+    margin: 20px;
+    margin-top: 70px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); /* 阴影效果 */
+    flex: 1; /* 让透明阴影框平均分配空间 */
+    position: relative; /* 相对定位 */
+    text-align: center; /* 文字居中 */
+}
+
+/* 透明阴影框图标样式 */
+.transparent-box img {
+    width: 60px; /* 图标宽度 */
+    height: 60px; /* 图标高度 */
+    margin-bottom: 10px; /* 图标与文字间距 */
+}
+
+/* 透明阴影框标题样式 */
+.transparent-box h3 {
+    color: #3a886b; /* 标题颜色 */
+    margin-bottom: 10px; /* 标题与内容间距 */
+}
+
+/* 透明阴影框内容样式 */
+.transparent-box p {
+    color: #333; /* 内容颜色 */
+}
+
+/* 第三部分主题样式 */
+.third-part .theme {
+    position: absolute; /* 绝对定位 */
+    left: 50%; /* 水平居中 */
+    transform: translateX(-50%); /* 水平居中 */
+    width: 100%; /* 宽度占满父容器 */
+}
+/* 第四部分样式 */
+.fourth-part {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+
+/* 透明玻璃框样式 */
+.glass-box {
+    background-color: rgba(255, 255, 255, 0.2); /* 半透明背景 */
+    backdrop-filter: blur(10px); /* 模糊效果 */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* 边框 */
+    border-radius: 10px; /* 圆角 */
+    padding: 20px;
+    margin: 20px;
+    margin-top: 70px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* 阴影效果 */
+    flex: 1; /* 让透明玻璃框平均分配空间 */
+    text-align: center; /* 文字居中 */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* 过渡效果 */
+}
+
+/* 透明玻璃框图标样式 */
+.glass-box img {
+    width: 60px; /* 图标宽度 */
+    height: 60px; /* 图标高度 */
+    margin-bottom: 10px; /* 图标与文字间距 */
+}
+
+/* 透明玻璃框标题样式 */
+.glass-box h3 {
+    color: #3a886b; /* 标题颜色 */
+}
+.fourth-part a{
+    text-decoration: none; /* 去掉下划线 */
+}
+/* 透明玻璃框触碰凸出反应 */
+.glass-box:hover {
+    transform: translateY(-10px); /* 向上移动 */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3); /* 增加阴影 */
+}
+footer {
+    background-color: rgba(230, 249, 242, 0.0); /* 半透明背景 */
+    color: rgb(16, 16, 16);
+    text-align: center;
+    padding: 10px;
+    margin-top: 100px;
+    margin-left: -8px;
+}

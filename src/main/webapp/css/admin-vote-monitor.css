@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgba(58, 136, 107, 0.3);
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: rgb(58, 136, 107);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.back-link {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: #007BFF;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 8px 12px;
+    border: 1px solid #007BFF;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.back-link:hover {
+    background-color: #007BFF;
+    color: white;
+}
+
+.search-bar {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.search-bar input {
+    padding: 8px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.search-bar button {
+    padding: 8px 16px;
+    background-color: rgb(58, 136, 107);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.search-bar button:hover {
+    background-color: rgba(58, 136, 107, 0.8);
+}
+
+.vote-monitor-list table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.vote-monitor-list th, .vote-monitor-list td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.vote-monitor-list th {
+    background-color: rgba(58, 136, 107, 0.1);
+    color: rgb(58, 136, 107);
+    font-weight: bold;
+}
+
+.vote-monitor-list tr:hover {
+    background-color: rgba(58, 136, 107, 0.05);
+}

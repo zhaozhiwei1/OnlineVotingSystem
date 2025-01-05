@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新建单选投票</title>
+    <link rel="stylesheet" href="css/CreateSingleOptionPoll.css">
+</head>
+<body>
+<div class="container">
+    <a href="index.html" class="back-link">返回首页</a>
+    <h2>新建单选投票</h2>
+    <div id="message" role="alert"></div>
+    <form id="voteForm" action="CreateSingleOptionPoll" method="post" enctype="multipart/form-data">
+        <label for="voteImage">上传投票主题图片:</label>
+        <input type="file" id="voteImage" name="voteImage" accept="image/*" required>
+
+        <label for="voteTheme">投票主题:</label>
+        <input type="text" id="voteTheme" name="voteTheme" required>
+
+        <label for="voteId">投票ID号:</label>
+        <input type="text" id="voteId" name="voteId" required>
+
+        <label for="voteDescription">投票描述:</label>
+        <textarea id="voteDescription" name="voteDescription" rows="4" required></textarea>
+
+        <label>投票选项:</label>
+        <div id="voteOptionsContainer">
+            <div class="vote-option">
+                <input type="text" name="voteOptions[]" placeholder="输入选项" required>
+            </div>
+        </div>
+        <button type="button" class="add-option-btn" onclick="addOption()">添加选项</button>
+
+        <label for="startTime">开始时间:</label>
+        <input type="datetime-local" id="startTime" name="startTime" required>
+
+        <label for="endTime">结束时间:</label>
+        <input type="datetime-local" id="endTime" name="endTime" required>
+
+        <button type="submit">提交投票</button>
+    </form>
+</div>
+<footer>
+    <p>&copy; 2024 在线投票平台. HBNU.</p>
+</footer>
+<script>
+    let optionCount = 1;
+
+    function addOption() {
+        optionCount++;
+        const container = document.getElementById('voteOptionsContainer');
+        const newOption = document.createElement('div');
+        newOption.className = 'vote-option';
+        newOption.innerHTML = `
+                <input type="text" id="voteOption${optionCount}" name="voteOptions[]" placeholder="输入选项" required>
+                <button type="button" onclick="removeOption(this)">删除</button>
+            `;
+        container.appendChild(newOption);
+    }
+
+    function removeOption(button) {
+        const optionDiv = button.parentNode;
+        optionDiv.remove();
+    }
+</script>
+</body>
+</html>

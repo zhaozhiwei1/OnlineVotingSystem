@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>在线投票平台</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+<!--first part-->
+<div class="navbar">
+    <div class="logo">
+        <img src="resource/image.png">
+    </div>
+    <ul class="nav-links">
+        <li><a href="#">首页</a></li>
+        <li class="dropdown">
+            <a href="#">创建投票</a>
+            <div class="dropdown-content">
+                <a href="CreateSingleOptionPoll.html">单选投票</a>
+                <a href="Createmultiplechoicepoll.html">多选投票</a>
+                <a href="#" onclick="alert('暂未开启，敬请期待！！！'); return false;">幸运抽奖</a>
+                <a href="#" onclick="alert('暂未开启，敬请期待！！！'); return false;">角色抽取</a>
+                <a href="#" onclick="alert('暂未开启，敬请期待！！！'); return false;">随机排序</a>
+            </div>
+        </li>
+        <li class="dropdown">
+            <a href="vote-manage.jsp">管理投票</a>
+        </li>
+        <li class="dropdown">
+            <a href="vote-participation.jsp">投票中心</a>
+        </li>
+        <li><a href="feedback.jsp">体验反馈</a></li>
+        <li><a href="viewProfile.jsp">个人信息</a></li>
+    </ul>
+    <div class="login-register">
+        <a href="#" id="logout">退出登录</a>
+    </div>
+</div>
+<!--second part-->
+<div class="second-part">
+    <div class="theme">我们的核心</div>
+    <div class="blur-box">
+        <h2>民主力</h2>
+        <p>我们的平台鼓励每一位用户参与决策过程，充分发挥民主的力量。通过投票，每个人的声音都能被听到，每个意见都有机会被采纳。</p>
+    </div>
+    <div class="blur-box">
+        <h2>决策力</h2>
+        <p>我们提供了丰富的投票工具和功能，帮助用户快速、准确地做出决策。无论是简单的单选投票，还是复杂的多选投票，都能轻松应对。</p>
+    </div>
+    <div class="blur-box">
+        <h2>高效性</h2>
+        <p>我们的平台设计简洁、操作方便，能够让用户在最短的时间内完成投票和决策。同时，我们还提供了实时统计和分析功能，让用户能够及时了解投票结果。</p>
+    </div>
+</div>
+<!--third part-->
+<div class="third-part">
+    <div class="theme">我们的功能</div>
+    <div class="transparent-box">
+        <img src="resource/投票.png" alt="图标1">
+        <h3>创建投票</h3>
+        <p>便捷创建投票，自定义多主题选项，高效收集各方意见，助力精准决策与互动。
+        </p>
+    </div>
+    <div class="transparent-box">
+        <img src="resource/我要投票.png" alt="图标2">
+        <h3>参与投票</h3>
+        <p>一键参与投票，表达自我见解，多样话题任选，快速融入群体发声与交流。 </p>
+    </div>
+    <div class="transparent-box">
+        <img src="resource/投票统计.png" alt="图标3">
+        <h3>结果统计</h3>
+        <p>智能统计投票结果，精准呈现数据，多维度分析，清晰直观展示投票全貌。 </p>
+    </div>
+    <div class="transparent-box">
+        <img src="resource/其他投票.png" alt="图标4">
+        <h3>其他功能</h3>
+        <p>投票设置随心调，时间限制灵活定，模式样式多，便捷体验全方位助力。 </p>
+    </div>
+</div>
+<!--fourth part-->
+<div class="fourth-part">
+    <div class="theme">创建投票</div>
+    <a href="CreateSingleOptionPoll.html" class="glass-box">
+        <img src="resource/单选投票.png" alt="图标1">
+        <h3>单选投票</h3>
+    </a>
+    <a href="Createmultiplechoicepoll.html" class="glass-box">
+        <img src="resource/多选投票.png" alt="图标2">
+        <h3>多选投票</h3>
+    </a>
+    <a href="#" class="glass-box" onclick="alert('暂未开启，敬请期待！！！'); return false;">
+        <img src="resource/抽签管理.png" alt="图标3">
+        <h3>幸运抽奖</h3>
+    </a>
+    <a href="#" class="glass-box" onclick="alert('暂未开启，敬请期待！！！'); return false;">
+        <img src="resource/角色抽取.png" alt="图标4">
+        <h3>角色抽取</h3>
+    </a>
+    <a href="#" class="glass-box" onclick="alert('暂未开启，敬请期待！！！'); return false;">
+        <img src="resource/随机排序.png" alt="图标5">
+        <h3>随机排序</h3>
+    </a>
+</div>
+<footer>
+    <p>&copy; 2024 在线投票平台. HBNU.</p>
+</footer>
+<script>
+    document.getElementById('logout').addEventListener('click', function(event) {
+        event.preventDefault(); // 阻止默认跳转行为
+        // 执行退出登录的逻辑
+        alert('您已退出登录'); // 示例：弹出提示
+        window.location.href = 'firstpage.html'; // 跳转到登录页面
+    });
+</script>
+</body>
+</html>
